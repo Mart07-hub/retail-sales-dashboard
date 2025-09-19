@@ -1,0 +1,34 @@
+# DAX Formulas for the Retail Sales Dashboard
+
+This file contains the DAX measures used in building the Power BI Sales Dashboard.
+
+---
+
+## Customer Insights
+- **Top Performing Customer**  
+```
+VAR TopCust =
+    CALCULATE (
+        FIRSTNONBLANK ( FactsSales[Customer Name], 1 ),
+        TOPN ( 1, VALUES ( FactsSales[Customer Name]), [Total Sales], DESC )
+    
+    )
+RETURN
+TopCust 
+
+## Product Insights
+- **Top Selling Product**
+``` 
+VAR TopProd =
+    CALCULATE (
+        FIRSTNONBLANK ( FactsSales[Product Name], 1 ),
+        TOPN ( 1, VALUES ( FactsSales[Product Name] ), [Total Sales], DESC )
+    )
+RETURN
+TopProd
+
+
+## Sales Insights
+- **Total Sales**
+Total Sales = SUM(FactsSales[Sales])
+ 
