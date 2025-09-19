@@ -15,13 +15,13 @@ It analyzes retail sales performance across regions, products, and customers, wi
 
 
 ## 🚀 How to Use
-1. Download the `Retail Dashboard` file from this repo.  
+1. Download the `Eleevo Task 8.pbix` file from this repo.  
 2. Open it in **Power BI Desktop**.  
 3. Refresh data to explore interactive visuals.  
 
 ---
 
 ## 📂 Repository Files
-- `RetailSales.pbix` → The dashboard file  
+- `Eleevo Task 8.pbix` → The dashboard file  
   
 
